@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: rgb(227, 233, 253);
+    color: navy;
+}
+
+h1 {
+    /* Position styling */
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styling */
+    font-size: 30pt;
+    color: navy;
+    text-transform: uppercase;
+}
+
+#intro p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+    text-align: center;
+    background-color: rgb(247, 178, 103);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+
+/* Home Navigation Bar */
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 3, 88);
+    width: 85px;
+}
+
+li a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: rgb(247, 178, 103);
+}
+
+
+/* Sidebar Styling */
+#sidebar {
+    margin-left: 2%;
+    margin-top: 100px;
+    width: 300px;
+    height: 70%;
+    padding: 2%;
+
+    /* Background Styling */
+    background-color: rgb(219, 229, 255);
+    border-style: solid;
+    border-color: navy;
+    border-width: 5px;
+    border-radius: 35px; 
+}
+
+#sidebar p {
+    color: #005ce6;
+}
+
+
+/* Adding spacing between the inputs */
+
+#color_input input, #range_input input {
+    margin-left: 10px;
+}
+
+#reset_button {
+    margin-left: 20px;
+}
+
+
+/* Styling the canvas's position */
+#game_screen {
+    display: flex;
+}
+
+#canvas{
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+
+
+/* Styling the buttons */
+#buttons {
+    display: inline-flex;
+}
+
+#apply_button {
+    background-color: rgb(250, 140, 76);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#apply_button:hover {
+    background-color: rgb(251, 189, 125);
+    color: rgb(11, 37, 69);
+}
+
+#reset_button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#reset_button:hover {
+    background-color: rgb(238, 244, 237);
+    color: rgb(19, 49, 92);
+}

@@ -1,0 +1,55 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 230);
+}
+
+h1 {
+    text-transform: uppercase ;
+}
+
+
+/* Styling the links to all mini games */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+/* Styling the links to each mini game */
+#coloring_game {
+    background-color: lightskyblue;
+    color: navy;
+}
+
+#guessing_shape_game {
+    background-color: rgb(196, 66, 77);
+    color: rgb(79, 0, 11);
+}
+
+#guessing_where_game {
+    background-color: black;
+    color: rgb(173, 181, 189);
+}
+
+#design_a_square {
+    background-color: gray;
+    color: peachpuff;
+}
+
+a:hover {
+    opacity: 70%;
+}
+

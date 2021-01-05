@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Roy's Guess Where Game</title>
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+  <link rel="stylesheet" href="css/guess_where_style.css">
+
+</head>
+
+<body>
+  <ul>
+    <li><a href="homepage.html">Home</a></li>
+  </ul>
+
+  <h1>Roy's Guess Where Game</h1>
+
+  <h4>What's your name? <input type="text" id="name" value="">
+    <span id="nameDisplay"></span>
+  </h4>
+
+  <h2>Can you guess where the card of your selected color is hiding? </h2>
+  <h3> Pick a color
+    <input type="radio" value="yellow" name="colorGroup"><span class="yellow-label">Yellow</span>
+    <input type="radio" value="red" name="colorGroup"><span class="red-label">Red</span>
+    <input type="radio" value="blue" name="colorGroup"> <span class="blue-label">Blue</span>
+    <input type="radio" value="pink" name="colorGroup"> <span class="pink-label">Pink</span>
+  </h3>
+
+  <h3> Select a shape
+    <input type="checkbox" id="shapeOption1" value="rect" name="shapeOptions"> Rectangle
+    <input type="checkbox" id="shapeOption2" value="circle" name="shapeOptions"> Circle
+  </h3>
+
+  <div id="generate--container">
+    <button id="generate"> Generate new hidden card </button>
+  </div>
+
+  <h3 id="result">
+  </h3>
+  <div id="card--container">
+  </div>
+  <!--
+  
+    <div id="surveyResult">
+    <h3>Please rate the game from 1 to 5 stars
+      <input id="gameRating" type="range" min="1" max="5"> 
+    </h3>
+    <div id="gameRatingResult">
+    </div>
+    </div>-->
+
+
+  <script src="javascript/guess_where_script.js"></script>
+</body>
+
+</html>

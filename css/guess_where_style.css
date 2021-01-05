@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(51, 51, 51);
+    color: rgb(242, 242, 245);
+}
+    
+#generate--container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.red-label {
+    color: red;
+}
+.blue-label {
+    color: blue;
+}
+.yellow-label {
+    color: yellow;
+}
+.pink-label {
+    color: pink;
+}
+#card--container {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin-right: 20px;
+}
+
+button#generate {
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+}
+#nameDisplay {
+    color: orange;
+    font-weight: bold;
+}
+.win {
+    color: cyan;
+}
+.trying {
+    color: orange;
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 85px;
+}
+
+li a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: gray;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Design a Square</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <style>
+      body, html {
+        font-family:Arial, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        color: midnightblue;
+        background-color: papayawhip;
+      }
+
+      a {
+        text-decoration: none;
+        background-color: gray;
+        color: peachpuff;
+        padding: 20px;
+        margin-right: 100%;
+      }
+
+      a:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="homepage.html">Home</a>
+    <h1>Design a Square</h1>
+    <h2>Choose One Color</h2>
+    <input type="checkbox" name="attribute" id="color" value="color"><label for="color">Blue</label>
+    <input type="checkbox" name="attribute" id="color2" value="color"><label for="color">Green</label>
+    <input type="checkbox" name="attribute" id="color3" value="color"><label for="color">Yellow</label>
+    <h2>Add Some Style</h2>
+    <input type="checkbox" name="attribute" id="stroke" value="stroke"><label for="stroke">Give it an outline</label>
+    <input type="checkbox" name="attribute" id="opacity" value="opacity"><label for="opacity">Make it transparent</label>
+    <h2>Change the Size</h2>
+    <input type="checkbox" name="attribute" id="size" value="size"><label for="size">Make it bigger</label>
+    <input type="checkbox" name="attribute" id="size2" value="size"><label for="size">Make it smaller</label>
+    <div id="canvas">
+    </div>
+    <script>
+
+      const width = 800;
+      const height = 600;
+
+      const svg = d3.select("#canvas")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+      let rect = svg.append("rect")
+          .attr("x", width/2 - 100)
+          .attr("y", height/2 - 100)
+          .attr("width", 200)
+          .attr("height", 200)
+          .attr("fill", "#454545");
+
+      d3.select("#color").on("input", function() {
+        let isChecked = d3.select(this).property("checked");
+        if(isChecked == true) {
+          rect.attr("fill","#AED6F1");
+        } else {
+          rect.attr("fill","#454545");
+        }
+      });
+
+      d3.select("#color2").on("input", function() {
+        let isChecked = d3.select(this).property("checked");
+        if(isChecked == true) {
+          rect.attr("fill","#52BE80");
+        } else {
+          rect.attr("fill","#454545");
+        }
+      });
+
+      d3.select("#color3").on("input", function() {
+        let isChecked = d3.select(this).property("checked");
+        if(isChecked == true) {
+          rect.attr("fill","#F4D03F");
+        } else {
+          rect.attr("fill","#454545");
+        }
+      });
+
+      d3.select("#stroke").on("input", function() {
+      let isChecked = d3.select(this).property("checked");
+      if(isChecked == true) {
+          rect.attr("stroke","#17202A")
+            .attr("stroke-width",7);
+        } else {
+          rect.attr("stroke","none")
+            .attr("stroke-width",0);
+        }
+      });
+
+      d3.select("#opacity").on("input", function() {
+      let isChecked = d3.select(this).property("checked");
+      if(isChecked == true) {
+          rect.attr("opacity",.5);
+        } else {
+          rect.attr("opacity",1);
+        }
+      });
+
+      d3.select("#size").on("input", function() {
+        let isChecked = d3.select(this).property("checked");
+        if(isChecked == true) {
+          rect.attr("width", 350)
+          .attr("height", 350);
+        } else {
+          rect.attr("width", 200)
+          .attr("height", 200);
+        }
+      });
+
+      d3.select("#size2").on("input", function() {
+        let isChecked = d3.select(this).property("checked");
+        if(isChecked == true) {
+          rect.attr("width", 100)
+          .attr("height", 100);
+        } else {
+          rect.attr("width", 200)
+          .attr("height", 200);
+        }
+      });
+
+    </script>
+  </body>
+</html>

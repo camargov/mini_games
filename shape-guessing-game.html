@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shape Guessing Game!</title>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <link rel="stylesheet" href="css/guessing_shape_style.css">
+  </head>
+  <body>
+    <h2><b>The Shape Guessing Game!</b></h2>
+    <h4>Click the button with the name of the shape displayed on the screen to win the game. After you get the answer right, click play again to start the game over! 
+    Click return home if you want to play a different game.</h4>
+    <div id="playbuttons--container">
+      <b>Game Controls: </b>
+      <button onClick="window.location.reload();">Play Again!</button>
+      <button onClick="document.location='homepage.html'">Return Home</button>
+    </div>
+    
+    <h3 id="result">Click the button matching the generated shape!</h3>
+    
+    <div id="shapebuttons--container">
+      <button id="shape--line">Line</button>
+      <button id="shape--square">Square</button>
+      <button id="shape--circle">Circle</button>
+    </div>
+    
+    <div id="canvas">
+    </div>
+    
+    <script src="javascript/guessing_shape_script.js"></script>
+  </body>
+</html>

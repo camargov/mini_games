@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Color</title>
+        <link rel="stylesheet" href="css/color_palette_style.css">
+        <script src="https://d3js.org/d3.v6.js"></script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+        </ul>
+
+        <div id="intro">
+            <h1>Color the city</h1>
+            <p id="instructions">
+                Welcome to the drawing game, a place where your creativity can shine. Simply read the questions, provide your own styling, and click APPLY to see the final results! Don't like what you have? Reset the drawing to try again!
+            </p>
+        </div>
+        
+
+        <div id="game_screen">
+            <!-- Appearance Settings (Color, Opacity, Outline) -->
+            <div id="sidebar">
+
+                <!-- Object Selection -->
+                <div id="object_selection">
+                    <p>Which objects do you want to color?</p>
+                    <input type="checkbox" id="skyCheckbox">
+                    <label for="skyCheckbox">Sky</label><br>
+
+                    <input type="checkbox" id="sunCheckbox">
+                    <label for="sunCheckbox">Sun</label><br>
+
+                    <input type="checkbox" id="buildingsCheckbox">
+                    <label for="buildingsCheckbox">Buildings</label>
+                </div>
+
+                <div id="appearance_settings">
+                    <!-- Radio Inputs -->
+                    <p>Do you want them to have an outline?</p>
+                    <div id="radio_inputs">
+                        
+                        <input type="radio" id="no_outline_radio" name="outline_setting">
+                        <label for="no_outline_radio">no outline</label>
+
+                        <input type="radio" id="outline_radio" name="outline_setting">
+                        <label for="outline_radio">outline</label>
+                    </div>
+
+                    <!-- Color Input -->
+                    <p>What's the fill color of the objects?</p>
+                    <div id="color_input">
+                        <label for="color_setting">Color:</label>
+                        <input type="color" id="color_setting" value="#ffffff">
+                    </div>
+                    
+
+                    <!-- Range Input -->
+                    <p>What's the opacity level of the objects?</p>
+                    <div id="range_input">
+                        <label for="opacity_setting">Opacity:<br>0 to 100</label>
+                        <input type="range" id="opacity_setting" min="0" max="100" value="100">
+                    </div>                    
+                </div>
+
+                
+                <!-- Buttons -->
+                <p>Let's see the changes!</p>
+                <div id="buttons">
+                    <input type="button" id="apply_button" value="Apply">
+                    <input type="button" id="reset_button" value="Reset drawing">
+                </div>
+            </div>
+
+            <!-- Drawing -->
+            <div id="canvas"></div>
+        </div>
+
+        <script src="javascript/color.js"></script>
+    </body>
+</html>
